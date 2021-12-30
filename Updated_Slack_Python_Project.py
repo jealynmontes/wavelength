@@ -43,7 +43,7 @@ def message_sent(event_data):
     channel = message["channel"]
     user = message["user"]
 
-    if "<user>" in message.get("text"):
+    if "<@U02ELQK362U>" in message.get("text"):
         slack_web_client.chat_postMessage(
                     channel= channel,
                     text= "Hi there <@" + user + ">!")
